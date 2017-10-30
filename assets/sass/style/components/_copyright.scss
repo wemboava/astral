@@ -1,0 +1,17 @@
+.copyright {
+    margin: 40px 0 150px 0;
+    &__list {
+        display: flex;
+        justify-content: center;
+        color: $color-copyright;
+        &__item {
+            :before {
+                display: inline;
+                content: '\2022';
+                opacity: 0.5;
+                padding: 0 0.75em 0 0.75em;
+            }
+        }
+    }
+    
+}

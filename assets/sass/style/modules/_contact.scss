@@ -1,0 +1,33 @@
+    .contact {
+        
+    margin-top: 30px;
+    background-color: white;
+    padding: 3.5em 2.5em 3.5em 2.5em;
+   
+    &__header {
+        padding-bottom: 25px;
+        
+        &__title {
+            font-size: 2em;
+        }
+    } 
+
+    &__form {
+
+        &__group {
+            display: flex;
+            justify-content: space-between;
+
+            & .input-form {
+                width: calc(50% - 12px);
+            }
+        }
+        &__subject {
+            width: 100%;
+        }
+        &__message {
+            width: 100%;
+            padding-bottom: 50px;
+        }
+    }
+}
