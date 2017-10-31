@@ -5,12 +5,8 @@
         justify-content: center;
                    
         position: relative;
-
     }
-            
-        
-    
-    
+
     .tab {
          display: none;
     }
@@ -34,12 +30,12 @@
 
                 position: absolute;
                 display: block;
-                top: 125%;
+                top: 110%;
 
                 border-left: 50px solid transparent;
                 border-right: 50px solid transparent;
                 border-bottom: 50px solid white;
-                transform: translateX(-32%);
+                transform: translateX(0);
                 opacity: 1;
 
               }
@@ -55,7 +51,7 @@
     
     .tab_label {
         position: relative;
-        margin: 0 .5em;
+        margin: 0;
         
         color: white;
         
