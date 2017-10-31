@@ -1,13 +1,15 @@
 body{
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 100;
-    background-image: url("https://html5up.net/uploads/demos/astral/assets/css/images/overlay.png"), url("https://html5up.net/uploads/demos/astral/assets/css/images/bg.jpg");
+    background-image: url("/assets/images/overlay.png"), url("/assets/images/bg.jpg");
     background-attachment: fixed;
     background-size: auto, 100% 100%;
 }
 .container {
     max-width: 75%;
     min-width: 787px;
+
     margin: 0 auto;
     padding-top: 30px;
+
 }
