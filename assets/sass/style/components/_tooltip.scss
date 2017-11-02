@@ -3,22 +3,23 @@
         padding: .5em 1em;
 
         opacity: 0;
-        background-color: black;
+        background-color: $color-button;
         font-size: 0.5;
+
         &:before {
             content: ''; 
-              width: 0;
-              height: 0;
-              
-              position: absolute;
-              left: 50%;
-              top: 36%;
-              display: block;
-              transform: translateX(-50%);              
-              
-              border-left: 10px solid transparent;
-              border-right: 10px solid transparent;
-              border-top: 10px solid black; 
+            width: 0;
+            height: 0;
+            
+            position: absolute;
+            left: 50%;
+            top: 36%;
+            display: block;
+            transform: translateX(-50%);              
+            
+            border-left: 10px solid transparent;
+            border-right: 10px solid transparent;
+            border-top: 10px solid $color-button; 
             }
         }
         
@@ -26,6 +27,7 @@
             display: flex;
             align-items: center;
             flex-direction: column-reverse;
+
             &:hover > .tooltip{
                 opacity: 1;
                 transition: 1s;

@@ -2,6 +2,7 @@
 //=================================================
 @import "style/reset.scss";
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
 //Base
 //=================================================
 @import "style/mixins.scss";
@@ -23,3 +24,4 @@
 @import "style/components/button.scss";
 @import "style/components/input-form.scss";
 @import "style/components/copyright.scss";
+@import "style/components/overlay.scss";

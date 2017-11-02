@@ -44,35 +44,4 @@
             color: $color-paragraph;
         }
     }
-
-
-    // &__div {
-     
-    //  @include mdscreen($screen-sm){
-    //         width: 100%;
-    //         &__image {
-    //             width: 100%;
-    //             padding: 1em;
-    //     }
-    // }
-
-        // &:before {
-        //     content: "\f054";
-        //     width: 80px;
-        //     height: 80px;
-            
-        //     margin-left: calc(100% - 80px);
-        //     top: calc(50% - 40px);
-        //     position:absolute;
-        //     display: block;
-        //     text-align: center;
-        //     padding-top: 20px;
-
-        //     background: rgba(0, 0, 0, 0.5);
-        //     color: white;
-        //     font-family: fontawesome;
-        //     font-size: 2.5em;
-        //   }
-
-    //}
 }
