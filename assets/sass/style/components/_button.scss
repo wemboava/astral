@@ -1,7 +1,11 @@
 .button {
-    color: white;
-    background-color: #222;
     padding: 1em 2em; 
     margin-top: 5em;
     
+    background-color: #222;
+    color: white;
+    
+    @include mdscreen($screen-sm) {
+        width: 100%;
+    }
 }

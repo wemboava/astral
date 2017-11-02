@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
 //Base
 //=================================================
+@import "style/mixins.scss";
 @import "style/vars.scss";
 @import "style/base.scss";
 @import "../../node_modules/font-awesome/css/font-awesome.css";
@@ -14,10 +15,11 @@
 @import "style/modules/home.scss";
 @import "style/modules/work.scss";
 @import "style/modules/contact.scss";
+@import "style/modules/twitter.scss";
 
 //Components
 //=================================================
-@import "style/components/icon-home.scss";
+@import "style/components/tooltip.scss";
 @import "style/components/button.scss";
 @import "style/components/input-form.scss";
 @import "style/components/copyright.scss";

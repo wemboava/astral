@@ -12,13 +12,11 @@
             <input type="radio" id="tab1" class="rd_tab" name="tab" checked> 
             <input type="radio" id="tab2" class="rd_tab" name="tab"> 
             <input type="radio" id="tab3" class="rd_tab" name="tab"> 
-            
             <div class="menu">
                 <label for="tab1" class="tab_label"><i class="fa fa-home" aria-hidden="true"></i><span class="tooltip">Home</span></label>
                 <label for="tab2" class="tab_label"><i class="fa fa-folder" aria-hidden="true"></i><span class="tooltip">Work</span></label>
-                <label for="tab3" class="tab_label"><i class="fa fa-envelope" aria-hidden="true"></i><span class="tooltip">Contact</span></label>
-                
-                <label for="tab4" class="tab_label"><i class="fa fa-twitter" aria-hidden="true"></i><span class="tooltip">Twitter</span></label>
+                <label for="tab3" class="tab_label"><i class="fa fa-envelope" aria-hidden="true"></i><span class="tooltip">Contact</span></label>            
+                <label for="tab4" class="tab_label"><a href="#modal-twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a><span class="tooltip">Twitter</span></label>
             </div>
     
             <div class="home tab">
@@ -28,7 +26,7 @@
                 </header class>   
                 <div class="home__div">
                     <span class="home__div__arrow"></span>
-                    <img src="https://html5up.net/uploads/demos/astral/images/me.jpg" alt="" class="home__div__image">
+                    <img class="home__div__image" src="https://html5up.net/uploads/demos/astral/images/me.jpg" alt="" class="home__div__image">
                 </div>
             </div>
             
@@ -101,6 +99,29 @@
                     <li class="copyright__list__item">Design: <a href="">HTML5 UP</a></li>
                     <li class="copyright__list__item">Demo Images: <a href="">Unsplash</a></li>
                 </ul>
+            </div>
+
+            <div class="overlay" id="modal-twitter">
+                <div class="twitter">            
+                    <div class="twitter__column1">
+                        <div class="twitter__column1__user"></div>
+                        <div class="twitter__column1__item"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                        <div class="twitter__column1__item"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                        <div class="twitter__column1__item"><i class="fa fa-camera" aria-hidden="true"></i></div>
+                    </div>
+                    
+                    <div class="twitter__column2">
+                        <div class="twitter__header__logo"><i class="fa fa-twitter" aria-hidden="true"></i></div>
+                        <textarea class="twitter__column2__area" name="" id="" cols="999" rows="50" placeholder="What's happening?"></textarea>
+                    </div>
+                    
+                    <div class="twitter__column3">
+                        <div class="twitter__column3__close"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                        <div class="twitter__column3__gif">GIF</div>
+                        <div class="twitter__column3__map"><i class="fa fa-map-marker" aria-hidden="true"></i></div>
+                        <div class="twitter__column3__confirm"><i class="fa fa-check" aria-hidden="true"></i></div>
+                    </div>
+                </div>
             </div>
         </div>
     </body>

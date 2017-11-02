@@ -1,47 +1,78 @@
 .home {
-    justify-content: space-between;
-    margin-top: 30px;
-    background-color: white;
     max-height: 394px;
 
+    justify-content: space-between;
+    margin-top: 30px;
+ 
+    background-color: white;
+
+    @include mdscreen($screen-sm){
+        flex-direction: column;
+        align-items: center;
+        padding-top: 2em;
+        max-height: 3000px;
+
+        &__div {
+            width: 100%;
+            position: unset;
+            &__image {
+                width: 100%;
+                padding: 1em;
+            }
+        }
+    }
     &__header {
-        padding-left: 50px;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        padding-left: 50px;
         font-weight: 100;
+
+        @include mdscreen($screen-sm){
+            width: 100%;
+            align-items: center;
+            margin-bottom: 1.5em;
+            padding-left: 0;
+        }
+
         &__title {
             font-size: 3em;
         }
         &__subtitle {
             font-size: 2em;
+
             color: $color-paragraph;
         }
     }
-    
-    &__div {
-     position: relative;
 
-        &:before {
-            content: "\f054";
-            width: 80px;
-            height: 80px;
+
+    // &__div {
+     
+    //  @include mdscreen($screen-sm){
+    //         width: 100%;
+    //         &__image {
+    //             width: 100%;
+    //             padding: 1em;
+    //     }
+    // }
+
+        // &:before {
+        //     content: "\f054";
+        //     width: 80px;
+        //     height: 80px;
             
-            margin-left: calc(100% - 80px);
-            top: calc(50% - 40px);
-            position:absolute;
-            display: block;
-            text-align: center;
-            padding-top: 20px;
+        //     margin-left: calc(100% - 80px);
+        //     top: calc(50% - 40px);
+        //     position:absolute;
+        //     display: block;
+        //     text-align: center;
+        //     padding-top: 20px;
 
-            background: rgba(0, 0, 0, 0.5);
-            color: white;
-            font-family: fontawesome;
-            font-size: 2.5em;
+        //     background: rgba(0, 0, 0, 0.5);
+        //     color: white;
+        //     font-family: fontawesome;
+        //     font-size: 2.5em;
+        //   }
 
-            &:hover {
-                width: 90px;
-            }
-          }
-    }
+    //}
 }
