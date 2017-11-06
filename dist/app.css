@@ -1,0 +1,320 @@
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url(../../node_modules/font-awesome/css/font-awesome.css);
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer; }
+
+body {
+  background-image: url("/assets/images/overlay.png"), url("/assets/images/bg.jpg");
+  background-attachment: fixed;
+  background-size: auto, 100% 100%;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 100; }
+
+.container {
+  max-width: 75%;
+  min-width: 787px;
+  position: relative;
+  margin: 0 auto; }
+  @media screen and (max-width: 992px) {
+    .container {
+      min-width: 98%;
+      width: 95%; } }
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative; }
+
+.tab {
+  display: none; }
+  @media screen and (max-width: 768px) {
+    .tab {
+      display: flex; } }
+
+.rd_tab {
+  display: none; }
+  .rd_tab:nth-of-type(1):checked ~ .menu .tab_label:nth-of-type(1),
+  .rd_tab:nth-of-type(2):checked ~ .menu .tab_label:nth-of-type(2),
+  .rd_tab:nth-of-type(3):checked ~ .menu .tab_label:nth-of-type(3) {
+    opacity: 1; }
+    .rd_tab:nth-of-type(1):checked ~ .menu .tab_label:nth-of-type(1) .fa,
+    .rd_tab:nth-of-type(2):checked ~ .menu .tab_label:nth-of-type(2) .fa,
+    .rd_tab:nth-of-type(3):checked ~ .menu .tab_label:nth-of-type(3) .fa {
+      opacity: 1; }
+    .rd_tab:nth-of-type(1):checked ~ .menu .tab_label:nth-of-type(1):before,
+    .rd_tab:nth-of-type(2):checked ~ .menu .tab_label:nth-of-type(2):before,
+    .rd_tab:nth-of-type(3):checked ~ .menu .tab_label:nth-of-type(3):before {
+      width: 0;
+      height: 0;
+      display: block;
+      opacity: 1;
+      position: absolute;
+      top: 110%;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 50px solid white;
+      transform: translateX(0); }
+      @media screen and (min-width: 768px) {
+        .rd_tab:nth-of-type(1):checked ~ .menu .tab_label:nth-of-type(1):before,
+        .rd_tab:nth-of-type(2):checked ~ .menu .tab_label:nth-of-type(2):before,
+        .rd_tab:nth-of-type(3):checked ~ .menu .tab_label:nth-of-type(3):before {
+          content: ''; } }
+  .rd_tab:nth-of-type(1):checked ~ .tab:nth-of-type(2),
+  .rd_tab:nth-of-type(2):checked ~ .tab:nth-of-type(3),
+  .rd_tab:nth-of-type(3):checked ~ .tab:nth-of-type(4) {
+    display: flex; }
+
+.tab_label {
+  position: relative;
+  margin: 0;
+  color: white; }
+  .tab_label .fa {
+    font-size: 2.5em;
+    opacity: 0.5; }
+    .tab_label .fa:hover {
+      cursor: pointer;
+      opacity: 1;
+      transition: .5s; }
+
+.home {
+  max-height: 394px;
+  justify-content: space-between;
+  margin-top: 30px;
+  background-color: white; }
+  @media screen and (max-width: 768px) {
+    .home {
+      flex-direction: column;
+      align-items: center;
+      padding-top: 2em;
+      max-height: 3000px; }
+      .home__div {
+        width: 100%;
+        position: unset; }
+        .home__div__image {
+          width: 100%;
+          padding: 1em; } }
+  .home__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    font-weight: 100; }
+    @media screen and (max-width: 768px) {
+      .home__header {
+        width: 100%;
+        align-items: center;
+        margin-bottom: 1.5em;
+        padding-left: 0; } }
+    .home__header__title {
+      font-size: 3em; }
+    .home__header__subtitle {
+      font-size: 2em;
+      color: #aaa; }
+
+.work {
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 3.5em 2.5em 3.5em 2.5em;
+  background-color: white; }
+  @media screen and (max-width: 768px) {
+    .work {
+      padding: 2.5em 1em 2.5em 1em; } }
+  .work__header__title {
+    font-size: 2em; }
+  .work__header__paragraph {
+    margin: 2em 0;
+    color: #aaa;
+    font-size: 1.2em; }
+  .work__grid__list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .work__grid__list__image {
+      width: 31%;
+      margin-bottom: 2%; }
+      @media screen and (max-width: 768px) {
+        .work__grid__list__image {
+          width: 100%; } }
+      .work__grid__list__image__img {
+        width: 100%; }
+
+.contact {
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 3.5em 2.5em 4em 2.5em;
+  background-color: white; }
+  @media screen and (max-width: 768px) {
+    .contact {
+      padding: 2.5em 1em 2.5em 1em; } }
+  .contact__header {
+    padding-bottom: 25px; }
+    .contact__header__title {
+      font-size: 2em; }
+  .contact__form__group {
+    display: flex;
+    justify-content: space-between; }
+    @media screen and (max-width: 768px) {
+      .contact__form__group {
+        flex-direction: column; }
+        .contact__form__group .input-form {
+          width: 100% !important; } }
+    .contact__form__group .input-form {
+      width: calc(50% - 12px); }
+  .contact__form__subject {
+    width: 100%; }
+  .contact__form__message {
+    width: 100%;
+    margin-bottom: 50px; }
+
+.twitter {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  display: flex;
+  font-size: 50px;
+  position: absolute;
+  top: 30%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  background: rgba(0, 0, 0, 0.8);
+  opacity: 1;
+  transition: opacity 400ms ease-in;
+  cursor: pointer;
+  color: white; }
+  .twitter__column1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.9em;
+    background-color: #a0a0a0; }
+    .twitter__column1__item:nth-child(3) {
+      border-bottom: solid 1px;
+      border-top: solid 1px;
+      padding: 15px 0; }
+    .twitter__column1__user {
+      width: 75px;
+      height: 64px;
+      background: url(https://html5up.net/uploads/demos/astral/images/me.jpg);
+      background-size: cover; }
+  .twitter__column2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #00c3ff; }
+    .twitter__column2__area {
+      width: 100%;
+      height: 100%;
+      padding: 10px 0 0 10px;
+      font-size: 18px; }
+  .twitter__column3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #00c3ff;
+    background-color: #cdeaf9; }
+    .twitter__column3__close {
+      width: 100%;
+      padding: 0 20px;
+      text-align: center;
+      color: #cdeaf9;
+      background-color: #00c3ff; }
+    .twitter__column3__gif {
+      font-size: 0.7em;
+      padding-bottom: 10px;
+      border-bottom: solid 1px white; }
+    .twitter__column3__confirm {
+      width: 100%;
+      text-align: center;
+      color: white;
+      background-color: #00c3ff; }
+
+#close {
+  display: none; }
+
+.tooltip {
+  margin-bottom: 1em;
+  padding: .5em 1em;
+  opacity: 0;
+  background-color: #222;
+  font-size: 0.5; }
+  .tooltip:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 50%;
+    top: 36%;
+    display: block;
+    transform: translateX(-50%);
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #222; }
+
+.tab_label {
+  display: flex;
+  align-items: center;
+  flex-direction: column-reverse; }
+  .tab_label:hover > .tooltip {
+    opacity: 1;
+    transition: 1s; }
+
+.button {
+  padding: 1em 2em;
+  margin-top: 5em;
+  background-color: #222;
+  color: white; }
+  @media screen and (max-width: 768px) {
+    .button {
+      width: 100%; } }
+
+.input-form {
+  margin-bottom: 25px;
+  padding: 17px;
+  border: none;
+  border-radius: 6px;
+  box-shadow: inset 0px 2px 3px 1px rgba(0, 0, 0, 0.05), 0px 1px 0px 0px rgba(255, 255, 255, 0.025);
+  background-color: #f4f4f4;
+  font-size: 1.1em; }
+
+.copyright {
+  margin: 40px 0 150px 0; }
+  .copyright__list {
+    display: flex;
+    justify-content: center;
+    color: rgba(255, 255, 255, 0.45); }
+    .copyright__list__item:nth-child(2):before, .copyright__list__item:nth-child(3):before {
+      content: '\2022';
+      display: inline;
+      padding: 0 0.75em 0 0.75em;
+      opacity: 0.5; }
+
+.overlay {
+  width: 100vw;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  position: fixed;
+  display: none;
+  z-index: 0;
+  background-color: rgba(0, 0, 0, 0.6); }
+  .overlay:target {
+    display: block;
+    pointer-events: auto; }
+
+/*# sourceMappingURL=app.css.map */
